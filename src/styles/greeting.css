@@ -1,0 +1,82 @@
+.greeting {
+    padding-top: 12.625rem; /* 202px */
+}
+
+.greeting__title {
+    font-size: 6.9375rem; /* 111px */
+    letter-spacing: 0.125rem; /* 2px */
+
+    text-align: center;
+    margin-bottom: 2.5625rem;
+}
+
+.greeting__info-text {
+    font-size: 3.375rem; /* 54px */
+    line-height: 4.3875rem; /* 70.2px */
+}
+
+.greeting__info-text svg {
+    width: 1.15em; /* 62px */
+    height: 1.2em; /* 65px */
+}
+.greeting__info-btn {
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 1.875rem;
+}
+
+.greeting__info-who {
+    float: left;
+    width: fit-content;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.greeting__info-who-ghost {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.greeting__info-who > .subtitle-accent {
+    padding-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .greeting {
+        padding-top: 10rem;
+    }
+
+    .greeting__title {
+        font-size: 6rem;
+
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .greeting__info-text {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .greeting {
+        padding-top: 8rem;
+    }
+
+    .greeting__title {
+        font-size: 4rem;
+    }
+
+    .greeting__info-text {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .greeting {
+        padding-top: 5rem;
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "homepage": "https://<your-username>.github.io/<repo-name>",
+  "name": "rogert-gsap-landing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/images.js",
+    "dev": "vite",
+    "build": "npm run images & vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sharp": "^0.34.5",
+    "vite": "^7.2.4",
+    "vite-plugin-svg-sprite": "^0.7.0",
+    "vite-plugin-svgo": "^2.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "reset-css": "^5.0.2"
+  }
+}

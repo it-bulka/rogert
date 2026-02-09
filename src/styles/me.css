@@ -1,0 +1,113 @@
+.me {
+    padding-top: 11.625rem; /* 186px */
+    padding-bottom: 12.5625rem; /* 201px */
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    /*column-count: 2;
+    column-gap: 20px;
+    position: relative;*/
+}
+
+.me__column {
+    display: flex;
+    flex-direction: column; /* кожне слово вниз */
+    gap: 0.5rem;
+}
+
+.me__column--left {
+   text-align: right;
+}
+
+.me__column--right {
+    text-align: left;
+}
+
+.me__column--left span,
+.me__column--right span {
+    position: relative;
+}
+.me__column--left span:nth-child(1) {
+    translate: 30% 0;
+}
+
+.me__column--left span:nth-child(2) {
+    translate: 33% 0;
+}
+
+.me__column--left span:nth-child(3) {
+    translate: 30% 0;
+}
+
+.me__column--right span:nth-child(1) {
+    translate: -33% 0;
+}
+
+.me__column--right span:nth-child(3) {
+    translate: -30% 0;
+}
+
+.me__photo {
+    width: 43%;
+    height: auto;
+    aspect-ratio: 501 / 534;
+    shape-outside: polygon(
+            0% 1.9%,
+            97.6% 0%,
+            99.8% 97.3%,
+            2% 99.8%
+    );
+    float: left; /* або right */
+    margin: 0 20px;
+    shape-margin: 8px;
+}
+
+
+.me__text {
+    text-transform: uppercase;
+    font-size: 9.75rem; /* 156px */
+    letter-spacing: 0.125rem; /* 2px */
+}
+
+.me__text-ghost {
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .me__text {
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .me__text {
+        font-size: 6rem;
+    }
+
+    .me__photo {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .me__text {
+        font-size: 5rem;
+    }
+
+    .me__column--right span:nth-child(1) {
+        translate: -40% 0;
+    }
+
+    .me__column--right span:nth-child(3) {
+        translate: -36% 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .me__text {
+        font-size: 3rem;
+    }
+}
