@@ -7,6 +7,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   build: {
+    base: '/rogert/',
     outDir: 'dist',
     rollupOptions: {
       input: {
